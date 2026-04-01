@@ -12,15 +12,11 @@ custom_domain = true
 [[d1_databases]]
 binding = "db"
 database_name = "cloud-mail" # 数据库的名称
-database_id = "${D1_DATABASE_ID}" # 使用占位符引用环境变量
+database_id = "${eaa89acf-bc5a-43f5-8d7e-262cf9e7084c}" # 使用占位符引用环境变量
 
 [[kv_namespaces]]
 binding = "kv"
-id = "${KV_NAMESPACE_ID}" # 使用占位符引用环境变量
-
-[[r2_buckets]]
-binding = "r2"
-bucket_name = "${R2_BUCKET_NAME}" # 使用占位符引用环境变量
+id = "${6f8b57f5b3ae4ad49312d58a7f53438e}" # 使用占位符引用环境变量
 
 [assets]
 binding = "assets"		#静态资源绑定名默认不可修改
